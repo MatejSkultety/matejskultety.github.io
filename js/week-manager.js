@@ -56,7 +56,7 @@ class WeekManager {
     exportToJSON() {
         return JSON.stringify({
             team: {
-                name: "Chatbot (GPT) na vyhľadávanie v štruktúrovaných dátach",
+                name: "Použitie veľkých jazykových modelov (LLM) pre extrakciu technických parametrov z technickej dokumentácie",
                 members: [
                     "Bc. Katarína Štofaniková",
                     "Bc. Boris Hnila",
