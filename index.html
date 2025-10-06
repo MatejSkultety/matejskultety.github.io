@@ -1,106 +1,142 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio of Matej Skultety</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="images/skuty.ico" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tímový projekt 1 - LLM extrakcia parametrov</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-robot me-2"></i>Tímový projekt 1
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fas fa-home me-1"></i>Domov
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">
+                            <i class="fas fa-users me-1"></i>Tím
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#progress">
+                            <i class="fas fa-tasks me-1"></i>Progres
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documents">
+                            <i class="fas fa-file-alt me-1"></i>Dokumenty
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="https://github.com/MatejSkultety" class="imageX avatar" target=”_blank”><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Matej</strong>, a young student<br />
-					of Applied Informatics who wants to<br />
-					share his work with you.</h1>
-				</div>
-			</header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold mb-4" id="project-title">
+                            Načítava sa...
+                        </h1>
+                        <p class="lead mb-4">
+                            Projekt zameraný na vytvorenie aplikácie využívajúcej LLM technológie 
+                            pre extrakciu technických parametrov z PDF dokumentácie (datasheet).
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#team" class="btn btn-primary btn-lg">
+                                <i class="fas fa-users me-2"></i>Spoznaj tím
+                            </a>
+                            <a href="#progress" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-chart-line me-2"></i>Zobraziť progres
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hero-illustration">
+                            <i class="fas fa-robot display-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Main -->
-			<div id="main">
+        <!-- Team Section -->
+        <section id="team" class="team-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-users me-2"></i>Náš tím
+                </h2>
+                <div class="row" id="team-info">
+                    <!-- Team info will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>MATEJ SKULTETY PROJECTS PORTFOLIO</h2>
-						</header>
-						<p>Hi there! I am student at Faculty of Electrical Engineering and Information Technology of STU in Bratislava.
-							I study Applied Informatics. Here are some of my projects I did as school assignments and others that I did
-							to improve my coding skills. This way I want to share my work with you. Enjoy!
-						</p>
-						<ul class="actions">
-							<li><a href="#" class="button">In Progress</a></li>
-						</ul>
-					</section>
+        <!-- Progress Section -->
+        <section id="progress" class="progress-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-tasks me-2"></i>Progres projektu
+                </h2>
+                
+                <!-- Progress Timeline -->
+                <div class="timeline" id="timeline">
+                    <!-- Timeline items will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/MatejSkultety/Sea-Battle-Game" class="imageX fit thumb" target="_blank"><img class="image fit thumb" src="images/thumbs/seabattle.jpg" alt="" /></a>
-								<h3><a href="https://github.com/MatejSkultety/Sea-Battle-Game" target=”_blank”>Theatre Seat Reservation System in C</a></h3>
-								<p>Console App compatible with all platforms written in C. Sea Battle is a strategy type turn based guessing game for two players. User can choose size of a board and whether he wants
-									to play against other player or computer. Goal of the game is to sink all enemy ships.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/MatejSkultety/Theatre-seat-reservation-system" class="imageX fit thumb" target="_blank"><img class="image fit thumb" src="images/thumbs/theatre.jpg" alt="" /></a>
-								<h3><a href="https://github.com/MatejSkultety/Theatre-seat-reservation-system" target=”_blank”>Theatre Seat Reservation System in C</a></h3>
-								<p>Windows Console App written in C to help with managing theatre reservations. Anyone can create an account and enjoy some culture. User can create, delete and show his active reservations.
-									Every visitor can check all available plays and seats. With special admin password, you can even create new play. Users and plays are saved permanently in simple database.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/MatejSkultety/Reaction-Time-Game" class="imageX fit thumb" target="_blank"><img class="image fit thumb" src="images/thumbs/reflex_game.jpg" alt="" /></a>
-								<h3><a href="https://github.com/MatejSkultety/Reaction-Time-Game" target=”_blank”>Reaction Time Game in C</a></h3>
-								<p>Simple game written in C to test your reaction time. Goal is to press shown keys ASAP. User can choose from several difficulty levels and free mode.
-									Your high score keeps saved in record.txt file. Console App for Windows.
-								</p>
-							</article>
-							<!--
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/MatejSkultety/Game-Clovece" class="imageX fit thumb" target="_blank"><img class="image fit thumb" src="images/thumbs/clovece.jpg" alt="" /></a>
-								<h3><a href="https://github.com/MatejSkultety/Game-Clovece" target=”_blank”>Python 'Man, Don't Get Angry' Game</a></h3>
-								<p>One of my first school projects. This simple program simulates game called 'Man, Don't Get Angry', or 'Clovece, nehnevaj sa' played by 2 players. User chooses size of the gameboard and watches, how the game developed over time.</p>
-							</article>
-							-->
-						</div>
-					</section>
+        <!-- Documents Section -->
+        <section id="documents" class="documents-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-file-alt me-2"></i>Dokumenty a odkazy
+                </h2>
+                <div class="row" id="documents-info">
+                    <!-- Documents will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
 
-				
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Tímový projekt 1. Všetky práva vyhradené.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Univerzitný projekt</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/MatejSkultety" class="icon brands fa-github" target=”_blank”><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/matej-%C5%A1kult%C3%A9ty-780386276/" class="icon brands fa-linkedin" target=”_blank”><span class="label">Dribbble</span></a></li>
-
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
 </html>

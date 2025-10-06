@@ -1,0 +1,54 @@
+{
+  "team": {
+    "name": "Použitie veľkých jazykových modelov (LLM) pre extrakciu technických parametrov z technickej dokumentácie",
+    "members": [
+      "Bc. Katarína Štofaniková",
+      "Bc. Boris Hnila",
+      "Bc. Matej Škultéty",
+      "Bc. Adam Zeman",
+      "Bc. Martin Klokočík"
+    ],
+    "supervisor": "Marián Lekavý",
+    "documentation": "https://docs.google.com/document/d/1eJpGcQqRMPdtJohdd2-GSKKJUZY3I-dE5RxuG-63AaQ/edit?pli=1",
+    "github": "https://github.com/MatejSkultety/matejskultety.github.io"
+  },
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Týždeň 1",
+      "date": null,
+      "type": "online",
+      "tasks": [
+        "Výber témy",
+        "Spracovanie a zaslanie ponuky zadávatelovi témy"
+      ],
+      "participants": [],
+      "documents": []
+    },
+    {
+      "id": 2,
+      "title": "Týždeň 2",
+      "date": "29.9.2025",
+      "type": "online",
+      "tasks": [
+        "vytvoriť backlog",
+        "vytvoriť GitHub repozitár (6.10.2025)",
+        "vytvoriť dokumentáciu",
+        "vytvoriť webstránku",
+        "vytvoriť databázu z onsemi webstránky (10.10.2025)",
+        "výber GPT algoritmu (6.10.2025)",
+        "pridať licenciu do projektu",
+        "vytvoriť základnú dokumentáciu pre tímový projekt",
+        "vytvoriť základný náčrt UI"
+      ],
+      "participants": [
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": []
+    }
+  ]
+}
