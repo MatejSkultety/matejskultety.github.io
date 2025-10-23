@@ -153,6 +153,35 @@
       ],
       "participants": [],
       "documents": []
+    },
+    {
+      "id": 7,
+      "title": "Týždeň 6",
+      "date": "23.10.2025",
+      "type": "online",
+      "activities": [
+        "Prezentácia existujúcich riešení na trhu",
+        "Diskusia o možných prístupoch k riešeniu zadanej problematiky"
+      ],
+      "tasks": [
+        "Vytvoriť dataset obsahujúci 10 PDF dokumentov",
+        "Spísať existujúce riešenia do dokumentácie",
+        "Otestovať prezentované prístupy"
+      ],
+      "participants": [
+        "Marián Lekavý",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [        
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1IwJD33R1uhCBDi32rKHiwctwZqA9OugS"
+        }
+      ]
     }
   ]
 }
