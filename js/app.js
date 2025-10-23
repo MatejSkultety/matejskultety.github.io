@@ -132,6 +132,9 @@ class TeamProjectApp {
                         <a href="${this.data.team.github}" target="_blank" class="btn btn-outline-primary btn-sm">
                             <i class="fab fa-github me-2"></i>GitHub Repo
                         </a>
+                        <a href="${this.data.team.project_tracker}" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-tasks me-2"></i>Project Tracker
+                        </a>
                     </div>
                 </div>
             </div>
