@@ -64,8 +64,8 @@ html {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #e3f2fd 0%, #b6e0fe 100%);
+    color: #212529;
     min-height: 60vh;
     display: flex;
     align-items: center;
@@ -322,15 +322,16 @@ html {
 }
 
 /* Custom Bootstrap overrides */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+.btn-hero-dark {
+    background-color: #212529;
+    border-color: #212529;
+    color: #fff;
     font-weight: 500;
 }
-
-.btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+.btn-hero-dark:hover {
+    background-color: #343a40;
+    border-color: #23272b;
+    color: #fff;
 }
 
 .navbar-brand {
