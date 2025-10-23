@@ -14,32 +14,16 @@
   },
   "weeks": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Týždeň 1",
-      "date": null,
+      "date": "24.9.2025",
       "type": "online",
-      "tasks": [
-        "Výber témy",
-        "Spracovanie a zaslanie ponuky zadávatelovi témy"
+      "activities": [
+        "Vytvorenie tímu",
+        "Rozdelenie rolí a zodpovedností"
       ],
-      "participants": [],
-      "documents": []
-    },
-    {
-      "id": 2,
-      "title": "Týždeň 2",
-      "date": "29.9.2025",
-      "type": "online",
       "tasks": [
-        "vytvoriť backlog",
-        "vytvoriť GitHub repozitár (6.10.2025)",
-        "vytvoriť dokumentáciu",
-        "vytvoriť webstránku",
-        "vytvoriť databázu z onsemi webstránky (10.10.2025)",
-        "výber GPT algoritmu (6.10.2025)",
-        "pridať licenciu do projektu",
-        "vytvoriť základnú dokumentáciu pre tímový projekt",
-        "vytvoriť základný náčrt UI"
+        "Naštudovanie dostupných tém"
       ],
       "participants": [
         "Bc. Katarína Štofaniková",
@@ -48,6 +32,126 @@
         "Bc. Adam Zeman",
         "Bc. Martin Klokočík"
       ],
+      "documents": []
+    },
+    {
+      "id": 1,
+      "title": "Týždeň 2",
+      "date": "24.9.2025",
+      "type": "online",
+      "activities": [
+        "Výber témy",
+        "Spracovanie a zaslanie ponuky zadávateľom tém"
+      ],
+      "tasks": [
+        "Kontaktovať zadávateľov tém"
+      ],
+      "participants": [
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1vd-ELMqJ9aOH46l41gBZt2JmY318jMho"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pohovor so zadávateľom",
+      "date": "26.9.2025",
+      "type": "online",
+      "activities": [
+        "Prezentácia tímu a návrhu riešenia",
+        "Približovanie očakávaní a požiadaviek zadávateľa",
+        "Diskusia o možných prístupoch a technológiách"
+      ],
+      "tasks": [],
+      "participants": [
+        "Marián Lekavý",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty"
+      ],
+      "documents": []
+    },
+    {
+      "id": 3,
+      "title": "Týždeň 3",
+      "date": "29.9.2025",
+      "type": "online",
+      "activities": [
+        "Hlasovanie a finálny výber témy",
+        "Zorganizovanie stretnutia so zadávateľom témy"
+      ],
+      "tasks": [
+        "Vytvoriť GitHub projekt",
+        "Nastaviť štruktúru dokumentácie",
+        "Vytvoriť GitHub repozitár",
+        "Nastaviť základnú štruktúru webovej stránky",
+        "Zaistiť priestory na stretnutia tímu"
+      ],
+      "participants": [
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/11BijkFgOue17ZMdrNXckcBWoDAkTcQ9z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Týždeň 4",
+      "date": "9.10.2025",
+      "type": "offline",
+      "activities": [
+        "Osobné predstavenie tímu",
+        "Diskusia o očakávaniach a požiadavkách vedúceho",
+        "Prezentácia predchádzajúceho riešenia"
+      ],
+      "tasks": [
+        "Poskytnúť API kľúče pre prácu s LLM",
+        "Pripraviť dokumentáciu projektu",
+        "Získať zdrojové kódy predchádzajúceho riešenia"
+      ],
+      "participants": [
+        "Marián Lekavý",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1d2bQcSA7EarY92xTUArNuBT63g1KKhvY"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Týždeň 5 - zrušené kvôli študijnému voľnu",
+      "date": "16.10.2025",
+      "type": "canceled",
+      "activities": [
+        "Prieskum aktuálnych riešení na trhu"
+      ],
+      "tasks": [
+        "Pokračovať v úlohách z predchádzajúceho týždňa",
+        "Vytvoriť prezentáciu dostupných riešení"
+      ],
+      "participants": [],
       "documents": []
     }
   ]

@@ -174,9 +174,17 @@ class TeamProjectApp {
                             </div>
                         ` : ''}
 
+                        <div class="mt-3">
+                            <h5><i class="fas fa-list me-2"></i>Aktivity:</h5>
+                            <ul class="activity-list">
+                                ${(week.activities && week.activities.length > 0)
+                                    ? week.activities.map(activity => `<li>${activity}</li>`).join('')
+                                    : '<li>Žiadne aktivity zaznamenané.</li>'}
+                            </ul>
+                        </div>
                         ${week.tasks && week.tasks.length > 0 ? `
                             <div class="mt-3">
-                                <h5><i class="fas fa-tasks me-2"></i>Úlohy a aktivity:</h5>
+                                <h5><i class="fas fa-tasks me-2"></i>Úlohy:</h5>
                                 <ul class="task-list">
                                     ${week.tasks.map(task => `<li>${task}</li>`).join('')}
                                 </ul>
@@ -188,9 +196,9 @@ class TeamProjectApp {
                                 <h5><i class="fas fa-file-alt me-2"></i>Dokumenty:</h5>
                                 <div class="d-flex gap-2 flex-wrap">
                                     ${week.documents.map(doc => 
-                                        `<button class="btn btn-sm btn-outline-primary" data-document="${doc}">
-                                            ${doc}
-                                        </button>`
+                                        `<a class="btn btn-sm btn-outline-primary" href="${doc.url}" target="_blank">
+                                            <i class="fas fa-link me-1"></i>${doc.title}
+                                        </a>`
                                     ).join('')}
                                 </div>
                             </div>
@@ -252,7 +260,8 @@ class TeamProjectApp {
             'online': 'Online stretnutie',
             'offline': 'Osobné stretnutie',
             'presentation': 'Prezentácia',
-            'planning': 'Plánovanie'
+            'planning': 'Plánovanie',
+            'canceled': 'Zrušené stretnutie'
         };
         return texts[type] || 'Stretnutie';
     }
