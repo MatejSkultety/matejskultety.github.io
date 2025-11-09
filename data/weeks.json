@@ -8,7 +8,7 @@
       "Bc. Adam Zeman",
       "Bc. Martin Klokočík"
     ],
-    "supervisor": "Marián Lekavý",
+    "supervisor": "Ing. Marián Lekavý, PhD.",
     "documentation": "https://docs.google.com/document/d/1LjcrA3P5ATeTV2TSfQ-ZColrwoX32RSC",
     "github": "https://github.com/BHnila/team_project",
     "project_tracker": "https://github.com/users/BHnila/projects/1"
@@ -73,7 +73,7 @@
       ],
       "tasks": [],
       "participants": [
-        "Marián Lekavý",
+        "Ing. Marián Lekavý, PhD.",
         "Bc. Katarína Štofaniková",
         "Bc. Boris Hnila",
         "Bc. Matej Škultéty"
@@ -126,7 +126,7 @@
         "Získať zdrojové kódy predchádzajúceho riešenia"
       ],
       "participants": [
-        "Marián Lekavý",
+        "Ing. Marián Lekavý, PhD.",
         "Bc. Katarína Štofaniková",
         "Bc. Boris Hnila",
         "Bc. Matej Škultéty",
@@ -170,7 +170,7 @@
         "Otestovať prezentované prístupy"
       ],
       "participants": [
-        "Marián Lekavý",
+        "Ing. Marián Lekavý, PhD.",
         "Bc. Katarína Štofaniková",
         "Bc. Boris Hnila",
         "Bc. Matej Škultéty",
@@ -195,12 +195,11 @@
         "Diskusia o ďalších krokoch"
       ],
       "tasks": [
-        "Vytvoriť tabuľku referenčných technických parametrov z testovacích dokumentov",
-        "Extrahovať technické parametre pomocou navrhnutých prístupov",
-        "Porovnať výsledky extrakcie s referenčnými hodnotami"
+        "Analyzovať zdrojové kódy predchádzajúceho riešenia",
+        "Extrahovať technické parametre pomocou navrhnutých prístupov"
       ],
       "participants": [
-        "Marián Lekavý",
+        "Ing. Marián Lekavý, PhD.",
         "Bc. Katarína Štofaniková",
         "Bc. Boris Hnila",
         "Bc. Matej Škultéty",
@@ -211,6 +210,35 @@
         {
           "title": "Zápisnica stretnutia",
           "url": "https://docs.google.com/document/d/1fQEzvG9xEAsRgJplO4Jd2ECQBOS9VEUI"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Týždeň 8",
+      "date": "6.11.2025",
+      "type": "online",
+      "activities": [
+        "Vyhodnotenie zdrojových kódov predchádzajúceho riešenia",
+        "Prezentácia výsledkov zlepšenia navrhnutých prístupov"
+      ],
+      "tasks": [
+        "Vytvoriť tabuľku referenčných technických parametrov z testovacích dokumentov",
+        "Ručne extrahovať technické parametre",
+        "Porovnať výsledky extrakcie s referenčnými hodnotami"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1Rw1AlleAx-TvqWd1CI2cQBZzqpFR1yED"
         }
       ]
     }
