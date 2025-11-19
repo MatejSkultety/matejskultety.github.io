@@ -241,6 +241,35 @@
           "url": "https://docs.google.com/document/d/1Rw1AlleAx-TvqWd1CI2cQBZzqpFR1yED"
         }
       ]
+    },
+    {
+      "id": 10,
+      "title": "Týždeň 9",
+      "date": "13.11.2025",
+      "type": "offline",
+      "activities": [
+        "Diskusia o chybách pri extrakcii technických parametrov",
+        "Vyhodnocovanie presnosti extrakčných metód",
+        "Identifikácia problematických parametrov"
+      ],
+      "tasks": [
+        "Doplniť chýbajúce technické parametre do referenčnej tabuľky",
+        "Opakovane otestovať extrakčné metódy na problematických parametroch"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1LDjGlu2CgmTdiSraF_mDDBeCsk3TgBhR"
+        }
+      ]
     }
   ]
 }
