@@ -270,6 +270,38 @@
           "url": "https://docs.google.com/document/d/1LDjGlu2CgmTdiSraF_mDDBeCsk3TgBhR"
         }
       ]
+    },
+    {
+      "id": 11,
+      "title": "Týždeň 10",
+      "date": "20.11.2025",
+      "type": "offline",
+      "activities": [
+        "Prezentácia výsledkov extrakcie technických parametrov po doplnení referenčnej tabuľky",
+        "Diskusia o možných vylepšeniach a ďalších krokoch",
+        "Porovnanie ceny a výkonu rôznych LLM modelov",
+        "Vybratie Docling ako primárnej knižnice pre spracovanie dokumentov",
+        "Vybratie gpt5-mini ako primárneho modelu pre extrakciu technických parametrov"
+      ],
+      "tasks": [
+        "Upratať GitHub repozitár",
+        "Aktualizovať dokumentáciu projektu s novými zisteniami",
+        "Rozšíriť testovací dataset o ďalších 10 MOSFET dokumentov"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1FAWaB--XWIoDH7c3xUMpmijhAe_Z1wEi"
+        }
+      ]
     }
   ]
 }
