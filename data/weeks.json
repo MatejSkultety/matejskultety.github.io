@@ -302,6 +302,37 @@
           "url": "https://docs.google.com/document/d/1FAWaB--XWIoDH7c3xUMpmijhAe_Z1wEi"
         }
       ]
+    },
+    {
+      "id": 12,
+      "title": "Týždeň 11",
+      "date": "27.11.2025",
+      "type": "offline",
+      "activities": [
+        "Prezentovanie výsledkov na viacerých MOSFET datasheetoch",
+        "Riešenie problému s Pydantic modelmi pri extrakcii údajov",
+        "Dodanie aktualizovaného zoznamu možných parametrov pre extrakciu",
+        "Diskusia o možných riešeniach a ďalších krokoch"
+      ],
+      "tasks": [
+        "Spracovať dodaný zoznam možných parametrov",
+        "Aktualizovať Pydantic modely podľa nových požiadaviek",
+        "Pracovať na dokumentácii projektu"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1EHC9tkK-js9Hubftihtb50YrLPYCoAN4"
+        }
+      ]
     }
   ]
 }
