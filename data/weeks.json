@@ -333,6 +333,35 @@
           "url": "https://docs.google.com/document/d/1EHC9tkK-js9Hubftihtb50YrLPYCoAN4"
         }
       ]
+    },
+    {
+      "id": 13,
+      "title": "Týždeň 12",
+      "date": "4.12.2025",
+      "type": "online",
+      "activities": [
+        "Prezentácia pokroku na projekte",
+        "Vyhodnotenie dodaného zoznamu parametrov a jeho implementácia do Pydantic modelov",
+        "Diskusia o pridaných ENUM typoch a ich využití pri extrakcii technických parametrov"
+      ],
+      "tasks": [
+        "Dokončiť skript pre generovanie ENUM typov",
+        "Aktualizovať dokumentáciu s novými zisteniami a postupmi"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/1Wl_N37xK1VIm08xHzYkRnlz5_VqvtKXD"
+        }
+      ] 
     }
   ]
 }
