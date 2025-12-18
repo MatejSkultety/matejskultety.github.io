@@ -338,7 +338,7 @@
       "id": 13,
       "title": "Týždeň 12",
       "date": "4.12.2025",
-      "type": "online",
+      "type": "offline",
       "activities": [
         "Prezentácia pokroku na projekte",
         "Vyhodnotenie dodaného zoznamu parametrov a jeho implementácia do Pydantic modelov",
@@ -362,6 +362,35 @@
           "url": "https://docs.google.com/document/d/1Wl_N37xK1VIm08xHzYkRnlz5_VqvtKXD"
         }
       ] 
+    },
+    {
+      "id": 14,
+      "title": "Týždeň 13",
+      "date": "11.12.2025",
+      "type": "online",
+      "activities": [
+        "Polročná prezentácia pokroku na projekte",
+        "Predstavenie aktuálneho stavu projektu a dosiahnutých výsledkov",
+        "Diskusia o úlohách na nasledujúce obdobie"
+      ],
+      "tasks": [
+        "Doplniť podiel práce jednotlivých členov tímu do dokumentácie",
+        "Odovzdať dokumntáciu"
+      ],
+      "participants": [
+        "Ing. Marián Lekavý, PhD.",
+        "Bc. Katarína Štofaniková",
+        "Bc. Boris Hnila",
+        "Bc. Matej Škultéty",
+        "Bc. Adam Zeman",
+        "Bc. Martin Klokočík"
+      ],
+      "documents": [
+        {
+          "title": "Zápisnica stretnutia",
+          "url": "https://docs.google.com/document/d/17edF-NEQ6y1HNSmmlY7N91I3Sm5J44_z"
+        }
+      ]
     }
   ]
 }
