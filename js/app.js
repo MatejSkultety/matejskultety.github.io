@@ -2,6 +2,7 @@
 class TeamProjectApp {
     constructor() {
         this.data = null;
+        this.selectedSemester = 'summer';
         this.init();
     }
 
@@ -22,74 +23,109 @@ class TeamProjectApp {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            this.data = await response.json();
+            this.data = this.normalizeData(await response.json());
         } catch (error) {
             console.error('Error loading data:', error);
-            // Fallback data if JSON fails to load
-            this.data = this.getFallbackData();
+            this.data = this.normalizeData(this.getFallbackData());
         }
+    }
+
+    normalizeData(data) {
+        if (data.semesters) {
+            return data;
+        }
+
+        if (Array.isArray(data.weeks)) {
+            return {
+                ...data,
+                semesters: {
+                    winter: {
+                        label: 'Zimný semester',
+                        weeks: data.weeks
+                    },
+                    summer: {
+                        label: 'Letný semester',
+                        weeks: []
+                    }
+                }
+            };
+        }
+
+        return data;
     }
 
     getFallbackData() {
         return {
             team: {
-                name: "Použitie veľkých jazykových modelov (LLM) pre extrakciu technických parametrov z technickej dokumentácie",
+                name: 'Použitie veľkých jazykových modelov (LLM) pre extrakciu technických parametrov z technickej dokumentácie',
                 members: [
-                    "Bc. Katarína Štofaniková",
-                    "Bc. Boris Hnila",
-                    "Bc. Matej Škultéty",
-                    "Bc. Adam Zeman",
-                    "Bc. Martin Klokočík"
+                    'Bc. Katarína Štofaniková',
+                    'Bc. Boris Hnila',
+                    'Bc. Matej Škultéty',
+                    'Bc. Adam Zeman',
+                    'Bc. Martin Klokočík'
                 ],
-                supervisor: "Marián Lekavý",
-                documentation: "https://docs.google.com/document/d/1eJpGcQqRMPdtJohdd2-GSKKJUZY3I-dE5RxuG-63AaQ/edit?pli=1",
-                github: "https://github.com/MatejSkultety/matejskultety.github.io"
+                supervisor: 'Marián Lekavý',
+                documentation: 'https://docs.google.com/document/d/1eJpGcQqRMPdtJohdd2-GSKKJUZY3I-dE5RxuG-63AaQ/edit?pli=1',
+                github: 'https://github.com/MatejSkultety/matejskultety.github.io'
             },
-            weeks: [
-                {
-                    id: 1,
-                    title: "Týždeň 1",
-                    date: null,
-                    type: "planning",
-                    tasks: [
-                        "Výber témy",
-                        "Spracovanie a zaslanie ponuky zadávatelovi témy"
-                    ],
-                    participants: [],
-                    documents: []
+            semesters: {
+                winter: {
+                    label: 'Zimný semester',
+                    weeks: []
                 },
-                {
-                    id: 2,
-                    title: "Týždeň 2",
-                    date: "29.9.2025",
-                    type: "online",
-                    tasks: [
-                        "vytvoriť backlog",
-                        "vytvoriť GitHub repozitár (6.10.2025)",
-                        "vytvoriť dokumentáciu",
-                        "vytvoriť webstránku",
-                        "vytvoriť databázu z onsemi webstránky (10.10.2025)",
-                        "výber GPT algoritmu (6.10.2025)",
-                        "pridať licenciu do projektu",
-                        "vytvoriť základnú dokumentáciu pre tímový projekt",
-                        "vytvoriť základný náčrt UI"
-                    ],
-                    participants: [
-                        "Bc. Katarína Štofaniková",
-                        "Bc. Boris Hnila",
-                        "Bc. Matej Škultéty",
-                        "Bc. Adam Zeman",
-                        "Bc. Martin Klokočík"
-                    ],
-                    documents: []
+                summer: {
+                    label: 'Letný semester',
+                    weeks: []
                 }
-            ]
+            }
         };
+    }
+
+    getSemesterConfig() {
+        if (!this.data || !this.data.semesters) {
+            return { key: 'summer', label: 'Letný semester', weeks: [] };
+        }
+
+        const semester = this.data.semesters[this.selectedSemester] || this.data.semesters.summer || this.data.semesters.winter;
+
+        return {
+            key: this.selectedSemester,
+            label: semester?.label || (this.selectedSemester === 'winter' ? 'Zimný semester' : 'Letný semester'),
+            weeks: semester?.weeks || []
+        };
+    }
+
+    setSemester(semesterKey) {
+        if (!this.data || !this.data.semesters || !this.data.semesters[semesterKey]) {
+            return;
+        }
+
+        this.selectedSemester = semesterKey;
+        this.renderSemesterSwitcher();
+        this.renderTimeline();
+    }
+
+    renderSemesterSwitcher() {
+        const semesterTitle = document.getElementById('semester-title');
+        const semesterButtons = document.querySelectorAll('[data-semester]');
+        const currentSemester = this.getSemesterConfig();
+
+        if (semesterTitle) {
+            semesterTitle.textContent = currentSemester.label;
+        }
+
+        semesterButtons.forEach(button => {
+            const isActive = button.getAttribute('data-semester') === this.selectedSemester;
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
     }
 
     renderAll() {
         this.renderProjectTitle();
         this.renderTeamInfo();
+        this.renderSemesterSwitcher();
         this.renderTimeline();
         this.renderDocuments();
     }
@@ -147,10 +183,23 @@ class TeamProjectApp {
         const timelineContainer = document.getElementById('timeline');
         if (!timelineContainer) return;
 
-        const timelineHTML = this.data.weeks.map((week, index) => {
+        const currentSemester = this.getSemesterConfig();
+        const weeks = currentSemester.weeks || [];
+
+        if (weeks.length === 0) {
+            timelineContainer.innerHTML = `
+                <div class="text-center py-5 text-muted">
+                    <i class="fas fa-calendar-alt display-6 d-block mb-3"></i>
+                    <p class="mb-0">Pre ${currentSemester.label.toLowerCase()} zatiaľ nie sú dostupné žiadne týždenné záznamy.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const timelineHTML = weeks.map((week, index) => {
             const meetingTypeClass = this.getMeetingTypeClass(week.type);
             const meetingTypeText = this.getMeetingTypeText(week.type);
-            
+
             return `
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="${index * 100}">
                     <div class="timeline-content">
@@ -158,7 +207,7 @@ class TeamProjectApp {
                             <h3 class="mb-0">${week.title}</h3>
                             ${week.date ? `<span class="timeline-date ms-auto">${week.date}</span>` : ''}
                         </div>
-                        
+
                         ${week.type !== 'planning' ? `
                             <span class="timeline-meeting-type ${meetingTypeClass}">
                                 <i class="fas fa-${this.getMeetingIcon(week.type)} me-1"></i>
@@ -170,9 +219,7 @@ class TeamProjectApp {
                             <div class="mt-3">
                                 <h5><i class="fas fa-users me-2"></i>Zúčastnili sa:</h5>
                                 <div class="participants-list">
-                                    ${week.participants.map(participant => 
-                                        `<span class="participant-tag">${participant}</span>`
-                                    ).join('')}
+                                    ${week.participants.map(participant => `<span class="participant-tag">${participant}</span>`).join('')}
                                 </div>
                             </div>
                         ` : ''}
@@ -198,11 +245,11 @@ class TeamProjectApp {
                             <div class="mt-3">
                                 <h5><i class="fas fa-file-alt me-2"></i>Dokumenty:</h5>
                                 <div class="d-flex gap-2 flex-wrap">
-                                    ${week.documents.map(doc => 
-                                        `<a class="btn btn-sm btn-outline-primary" href="${doc.url}" target="_blank">
+                                    ${week.documents.map(doc => `
+                                        <a class="btn btn-sm btn-outline-primary" href="${doc.url}" target="_blank">
                                             <i class="fas fa-link me-1"></i>${doc.title}
-                                        </a>`
-                                    ).join('')}
+                                        </a>
+                                    `).join('')}
                                 </div>
                             </div>
                         ` : ''}
@@ -250,36 +297,42 @@ class TeamProjectApp {
 
     getMeetingTypeClass(type) {
         const classes = {
-            'online': 'bg-info',
-            'offline': 'bg-success',
-            'presentation': 'bg-warning',
-            'planning': 'bg-secondary'
+            online: 'bg-info',
+            offline: 'bg-success',
+            presentation: 'bg-warning',
+            planning: 'bg-secondary'
         };
         return classes[type] || 'bg-secondary';
     }
 
     getMeetingTypeText(type) {
         const texts = {
-            'online': 'Online stretnutie',
-            'offline': 'Osobné stretnutie',
-            'presentation': 'Prezentácia',
-            'planning': 'Plánovanie',
-            'canceled': 'Zrušené stretnutie'
+            online: 'Online stretnutie',
+            offline: 'Osobné stretnutie',
+            presentation: 'Prezentácia',
+            planning: 'Plánovanie',
+            canceled: 'Zrušené stretnutie'
         };
         return texts[type] || 'Stretnutie';
     }
 
     getMeetingIcon(type) {
         const icons = {
-            'online': 'video',
-            'offline': 'handshake',
-            'presentation': 'presentation',
-            'planning': 'clipboard-list'
+            online: 'video',
+            offline: 'handshake',
+            presentation: 'presentation',
+            planning: 'clipboard-list'
         };
         return icons[type] || 'calendar';
     }
 
     bindEvents() {
+        document.querySelectorAll('[data-semester]').forEach(button => {
+            button.addEventListener('click', () => {
+                this.setSemester(button.getAttribute('data-semester'));
+            });
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -305,7 +358,7 @@ class TeamProjectApp {
         // Navbar collapse on link click (mobile)
         const navbarCollapse = document.querySelector('.navbar-collapse');
         const navLinks = document.querySelectorAll('.nav-link');
-        
+
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (navbarCollapse.classList.contains('show')) {
@@ -317,9 +370,7 @@ class TeamProjectApp {
     }
 
     showDocument(docName) {
-        // This would show a modal or redirect to document
         console.log('Showing document:', docName);
-        // Implementation would depend on your document storage/display strategy
     }
 
     showError(message) {
@@ -330,23 +381,22 @@ class TeamProjectApp {
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
         `;
-        
-        // Add error to top of main content
+
         const mainContent = document.querySelector('.main-content');
         if (mainContent) {
             mainContent.insertAdjacentHTML('afterbegin', errorHTML);
         }
     }
 
-    // Method to add new week (for future use)
     addWeek(weekData) {
-        if (this.data && this.data.weeks) {
-            this.data.weeks.push(weekData);
+        const semester = this.getSemesterConfig();
+
+        if (this.data && this.data.semesters && this.data.semesters[semester.key]) {
+            this.data.semesters[semester.key].weeks.push(weekData);
             this.renderTimeline();
         }
     }
 
-    // Method to update team info (for future use)
     updateTeamInfo(teamData) {
         if (this.data && this.data.team) {
             this.data.team = { ...this.data.team, ...teamData };

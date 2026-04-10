@@ -122,6 +122,44 @@ html {
     margin: 0 auto;
 }
 
+.semester-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(227, 242, 253, 0.95) 100%);
+    border: 1px solid rgba(13, 110, 253, 0.12);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.semester-switcher__label {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.semester-switcher__title {
+    color: var(--dark-color);
+    margin-bottom: 0;
+}
+
+.semester-toggle .btn {
+    min-width: 160px;
+    font-weight: 500;
+}
+
+.semester-toggle .btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.18);
+}
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -254,6 +292,20 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .semester-switcher {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .semester-toggle {
+        width: 100%;
+    }
+
+    .semester-toggle .btn {
+        width: 50%;
+        min-width: 0;
+    }
+
     .timeline::before {
         left: 20px;
     }

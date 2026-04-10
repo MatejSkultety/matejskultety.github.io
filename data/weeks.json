@@ -13,384 +13,614 @@
     "github": "https://github.com/BHnila/team_project",
     "project_tracker": "https://github.com/users/BHnila/projects/1"
   },
-  "weeks": [
-    {
-      "id": 0,
-      "title": "Týždeň 1",
-      "date": "24.9.2025",
-      "type": "online",
-      "activities": [
-        "Vytvorenie tímu",
-        "Rozdelenie rolí a zodpovedností"
-      ],
-      "tasks": [
-        "Naštudovanie dostupných tém"
-      ],
-      "participants": [
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": []
-    },
-    {
-      "id": 1,
-      "title": "Týždeň 2",
-      "date": "24.9.2025",
-      "type": "online",
-      "activities": [
-        "Výber témy",
-        "Spracovanie a zaslanie ponuky zadávateľom tém"
-      ],
-      "tasks": [
-        "Kontaktovať zadávateľov tém"
-      ],
-      "participants": [
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+  "semesters": {
+    "winter": {
+      "label": "Zimný semester",
+      "weeks": [
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1vd-ELMqJ9aOH46l41gBZt2JmY318jMho"
+          "id": 0,
+          "title": "Týždeň 1",
+          "date": "24.9.2025",
+          "type": "online",
+          "activities": [
+            "Vytvorenie tímu",
+            "Rozdelenie rolí a zodpovedností"
+          ],
+          "tasks": [
+            "Naštudovanie dostupných tém"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": []
+        },
+        {
+          "id": 1,
+          "title": "Týždeň 2",
+          "date": "24.9.2025",
+          "type": "online",
+          "activities": [
+            "Výber témy",
+            "Spracovanie a zaslanie ponuky zadávateľom tém"
+          ],
+          "tasks": [
+            "Kontaktovať zadávateľov tém"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1vd-ELMqJ9aOH46l41gBZt2JmY318jMho"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Pohovor so zadávateľom",
+          "date": "26.9.2025",
+          "type": "online",
+          "activities": [
+            "Prezentácia tímu a návrhu riešenia",
+            "Približovanie očakávaní a požiadaviek zadávateľa",
+            "Diskusia o možných prístupoch a technológiách"
+          ],
+          "tasks": [],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty"
+          ],
+          "documents": []
+        },
+        {
+          "id": 3,
+          "title": "Týždeň 3",
+          "date": "29.9.2025",
+          "type": "online",
+          "activities": [
+            "Hlasovanie a finálny výber témy",
+            "Zorganizovanie stretnutia so zadávateľom témy"
+          ],
+          "tasks": [
+            "Vytvoriť GitHub projekt",
+            "Nastaviť štruktúru dokumentácie",
+            "Vytvoriť GitHub repozitár",
+            "Nastaviť základnú štruktúru webovej stránky",
+            "Zaistiť priestory na stretnutia tímu"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/11BijkFgOue17ZMdrNXckcBWoDAkTcQ9z"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Týždeň 4",
+          "date": "9.10.2025",
+          "type": "offline",
+          "activities": [
+            "Osobné predstavenie tímu",
+            "Diskusia o očakávaniach a požiadavkách vedúceho",
+            "Prezentácia predchádzajúceho riešenia"
+          ],
+          "tasks": [
+            "Poskytnúť API kľúče pre prácu s LLM",
+            "Pripraviť dokumentáciu projektu",
+            "Získať zdrojové kódy predchádzajúceho riešenia"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1d2bQcSA7EarY92xTUArNuBT63g1KKhvY"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Týždeň 5 - zrušené kvôli študijnému voľnu",
+          "date": "16.10.2025",
+          "type": "canceled",
+          "activities": [
+            "Prieskum aktuálnych riešení na trhu"
+          ],
+          "tasks": [
+            "Pokračovať v úlohách z predchádzajúceho týždňa",
+            "Vytvoriť prezentáciu dostupných riešení"
+          ],
+          "participants": [],
+          "documents": []
+        },
+        {
+          "id": 7,
+          "title": "Týždeň 6",
+          "date": "23.10.2025",
+          "type": "online",
+          "activities": [
+            "Prezentácia existujúcich riešení na trhu",
+            "Diskusia o možných prístupoch k riešeniu zadanej problematiky"
+          ],
+          "tasks": [
+            "Vytvoriť dataset obsahujúci 10 PDF dokumentov",
+            "Spísať existujúce riešenia do dokumentácie",
+            "Otestovať prezentované prístupy"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1IwJD33R1uhCBDi32rKHiwctwZqA9OugS"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Týždeň 7",
+          "date": "30.10.2025",
+          "type": "offline",
+          "activities": [
+            "Nahranie zdrojových kódov predchádzajúceho riešenia na GitHub",
+            "Prezentácia výsledkov testovania navrhnutých prístupov",
+            "Diskusia o ďalších krokoch"
+          ],
+          "tasks": [
+            "Analyzovať zdrojové kódy predchádzajúceho riešenia",
+            "Extrahovať technické parametre pomocou navrhnutých prístupov"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1fQEzvG9xEAsRgJplO4Jd2ECQBOS9VEUI"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Týždeň 8",
+          "date": "6.11.2025",
+          "type": "online",
+          "activities": [
+            "Vyhodnotenie zdrojových kódov predchádzajúceho riešenia",
+            "Prezentácia výsledkov zlepšenia navrhnutých prístupov"
+          ],
+          "tasks": [
+            "Vytvoriť tabuľku referenčných technických parametrov z testovacích dokumentov",
+            "Ručne extrahovať technické parametre",
+            "Porovnať výsledky extrakcie s referenčnými hodnotami"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1Rw1AlleAx-TvqWd1CI2cQBZzqpFR1yED"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Týždeň 9",
+          "date": "13.11.2025",
+          "type": "offline",
+          "activities": [
+            "Diskusia o chybách pri extrakcii technických parametrov",
+            "Vyhodnocovanie presnosti extrakčných metód",
+            "Identifikácia problematických parametrov"
+          ],
+          "tasks": [
+            "Doplniť chýbajúce technické parametre do referenčnej tabuľky",
+            "Opakovane otestovať extrakčné metódy na problematických parametroch"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1LDjGlu2CgmTdiSraF_mDDBeCsk3TgBhR"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Týždeň 10",
+          "date": "20.11.2025",
+          "type": "offline",
+          "activities": [
+            "Prezentácia výsledkov extrakcie technických parametrov po doplnení referenčnej tabuľky",
+            "Diskusia o možných vylepšeniach a ďalších krokoch",
+            "Porovnanie ceny a výkonu rôznych LLM modelov",
+            "Vybratie Docling ako primárnej knižnice pre spracovanie dokumentov",
+            "Vybratie gpt5-mini ako primárneho modelu pre extrakciu technických parametrov"
+          ],
+          "tasks": [
+            "Upratať GitHub repozitár",
+            "Aktualizovať dokumentáciu projektu s novými zisteniami",
+            "Rozšíriť testovací dataset o ďalších 10 MOSFET dokumentov"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1FAWaB--XWIoDH7c3xUMpmijhAe_Z1wEi"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Týždeň 11",
+          "date": "27.11.2025",
+          "type": "offline",
+          "activities": [
+            "Prezentovanie výsledkov na viacerých MOSFET datasheetoch",
+            "Riešenie problému s Pydantic modelmi pri extrakcii údajov",
+            "Dodanie aktualizovaného zoznamu možných parametrov pre extrakciu",
+            "Diskusia o možných riešeniach a ďalších krokoch"
+          ],
+          "tasks": [
+            "Spracovať dodaný zoznam možných parametrov",
+            "Aktualizovať Pydantic modely podľa nových požiadaviek",
+            "Pracovať na dokumentácii projektu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1EHC9tkK-js9Hubftihtb50YrLPYCoAN4"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Týždeň 12",
+          "date": "4.12.2025",
+          "type": "offline",
+          "activities": [
+            "Prezentácia pokroku na projekte",
+            "Vyhodnotenie dodaného zoznamu parametrov a jeho implementácia do Pydantic modelov",
+            "Diskusia o pridaných ENUM typoch a ich využití pri extrakcii technických parametrov"
+          ],
+          "tasks": [
+            "Dokončiť skript pre generovanie ENUM typov",
+            "Aktualizovať dokumentáciu s novými zisteniami a postupmi"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1Wl_N37xK1VIm08xHzYkRnlz5_VqvtKXD"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Týždeň 13",
+          "date": "11.12.2025",
+          "type": "online",
+          "activities": [
+            "Polročná prezentácia pokroku na projekte",
+            "Predstavenie aktuálneho stavu projektu a dosiahnutých výsledkov",
+            "Diskusia o úlohách na nasledujúce obdobie"
+          ],
+          "tasks": [
+            "Doplniť podiel práce jednotlivých členov tímu do dokumentácie",
+            "Odovzdať dokumntáciu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/17edF-NEQ6y1HNSmmlY7N91I3Sm5J44_z"
+            }
+          ]
         }
       ]
     },
-    {
-      "id": 2,
-      "title": "Pohovor so zadávateľom",
-      "date": "26.9.2025",
-      "type": "online",
-      "activities": [
-        "Prezentácia tímu a návrhu riešenia",
-        "Približovanie očakávaní a požiadaviek zadávateľa",
-        "Diskusia o možných prístupoch a technológiách"
-      ],
-      "tasks": [],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty"
-      ],
-      "documents": []
-    },
-    {
-      "id": 3,
-      "title": "Týždeň 3",
-      "date": "29.9.2025",
-      "type": "online",
-      "activities": [
-        "Hlasovanie a finálny výber témy",
-        "Zorganizovanie stretnutia so zadávateľom témy"
-      ],
-      "tasks": [
-        "Vytvoriť GitHub projekt",
-        "Nastaviť štruktúru dokumentácie",
-        "Vytvoriť GitHub repozitár",
-        "Nastaviť základnú štruktúru webovej stránky",
-        "Zaistiť priestory na stretnutia tímu"
-      ],
-      "participants": [
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+    "summer": {
+      "label": "Letný semester",
+      "weeks": [
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/11BijkFgOue17ZMdrNXckcBWoDAkTcQ9z"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Týždeň 4",
-      "date": "9.10.2025",
-      "type": "offline",
-      "activities": [
-        "Osobné predstavenie tímu",
-        "Diskusia o očakávaniach a požiadavkách vedúceho",
-        "Prezentácia predchádzajúceho riešenia"
-      ],
-      "tasks": [
-        "Poskytnúť API kľúče pre prácu s LLM",
-        "Pripraviť dokumentáciu projektu",
-        "Získať zdrojové kódy predchádzajúceho riešenia"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+          "id": 1,
+          "title": "Týždeň 1",
+          "date": "19.2.2026",
+          "type": "offline",
+          "activities": [
+            "Otvorenie stretnutia",
+            "Diskusia o ďalších krokoch v projekte"
+          ],
+          "tasks": [
+            "Nájsť spoločný čas stretnutí",
+            "Poslať M. Lekavému PDF súbory a príslušné JSON šablóny",
+            "Pripomenúť si projekt",
+            "Začať s úpravami promptov"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1HxoJfFkIpkotCFbyx0ZDNN4Nmwp9go7G"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1d2bQcSA7EarY92xTUArNuBT63g1KKhvY"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Týždeň 5 - zrušené kvôli študijnému voľnu",
-      "date": "16.10.2025",
-      "type": "canceled",
-      "activities": [
-        "Prieskum aktuálnych riešení na trhu"
-      ],
-      "tasks": [
-        "Pokračovať v úlohách z predchádzajúceho týždňa",
-        "Vytvoriť prezentáciu dostupných riešení"
-      ],
-      "participants": [],
-      "documents": []
-    },
-    {
-      "id": 7,
-      "title": "Týždeň 6",
-      "date": "23.10.2025",
-      "type": "online",
-      "activities": [
-        "Prezentácia existujúcich riešení na trhu",
-        "Diskusia o možných prístupoch k riešeniu zadanej problematiky"
-      ],
-      "tasks": [
-        "Vytvoriť dataset obsahujúci 10 PDF dokumentov",
-        "Spísať existujúce riešenia do dokumentácie",
-        "Otestovať prezentované prístupy"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [        
+          "id": 2,
+          "title": "Týždeň 2",
+          "date": "26.2.2026",
+          "type": "online",
+          "activities": [
+            "Konzultácia nejasností z predchádzajúceho týždňa",
+            "Potvrdenie spoločného času stretnutí"
+          ],
+          "tasks": [
+            "Začať s úpravami promptov",
+            "Pripraviť Pydantic modely z dodaných dokumentov",
+            "Otestovať viaceré LLM modely a porovnať ich úspešnosť"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1Ib6e6FUFmwWdlt0qpiwe9bSIhH8XCQAB"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1IwJD33R1uhCBDi32rKHiwctwZqA9OugS"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Týždeň 7",
-      "date": "30.10.2025",
-      "type": "offline",
-      "activities": [
-        "Nahranie zdrojových kódov predchádzajúceho riešenia na GitHub",
-        "Prezentácia výsledkov testovania navrhnutých prístupov",
-        "Diskusia o ďalších krokoch"
-      ],
-      "tasks": [
-        "Analyzovať zdrojové kódy predchádzajúceho riešenia",
-        "Extrahovať technické parametre pomocou navrhnutých prístupov"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+          "id": 3,
+          "title": "Týždeň 3",
+          "date": "6.3.2026",
+          "type": "offline",
+          "activities": [
+            "Nesúlad ručne extrahovaných JSON modelov s údajmi v PDF datasheetoch",
+            "Porovnanie LLM extrakcie s ručnou extrakciou",
+            "Preverenie integrácie extrakcie literálov do extrakčného flowu",
+            "Porovnanie AI summary s ručne vytvorenou zápisnicou"
+          ],
+          "tasks": [
+            "Nanovo ručne extrahovať údaje z oboch PDF datasheetov a poslať ich M. Lekavému na validáciu",
+            "Finalizovať Pydantic modely po sprístupnení správne vyplnených JSON modelov"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1ZyHhEdW8puJVrbAV_NE4KZHxRejcblTw"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1fQEzvG9xEAsRgJplO4Jd2ECQBOS9VEUI"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Týždeň 8",
-      "date": "6.11.2025",
-      "type": "online",
-      "activities": [
-        "Vyhodnotenie zdrojových kódov predchádzajúceho riešenia",
-        "Prezentácia výsledkov zlepšenia navrhnutých prístupov"
-      ],
-      "tasks": [
-        "Vytvoriť tabuľku referenčných technických parametrov z testovacích dokumentov",
-        "Ručne extrahovať technické parametre",
-        "Porovnať výsledky extrakcie s referenčnými hodnotami"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+          "id": 4,
+          "title": "Týždeň 4",
+          "date": "13.3.2026",
+          "type": "offline",
+          "activities": [
+            "Nesúlad ručne extrahovaných JSON modelov s údajmi v PDF datasheetoch",
+            "Porovnanie LLM extrakcie s ručnou extrakciou",
+            "Preverenie integrácie extrakcie literálov do flowu",
+            "Porovnanie AI summary s ručne vytvorenou zápisnicou"
+          ],
+          "tasks": [
+            "Nanovo ručne extrahovať údaje z oboch PDF datasheetov a poslať ich M. Lekavému na validáciu",
+            "Finalizovať Pydantic modely po sprístupnení správne vyplnených JSON modelov",
+            "Upraviť zoznamy literálov podľa dokumentu od M. Lekavého"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1CLYJ4iUv8spRx2mbwFp1mcv9Y8r7JAqD"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1Rw1AlleAx-TvqWd1CI2cQBZzqpFR1yED"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Týždeň 9",
-      "date": "13.11.2025",
-      "type": "offline",
-      "activities": [
-        "Diskusia o chybách pri extrakcii technických parametrov",
-        "Vyhodnocovanie presnosti extrakčných metód",
-        "Identifikácia problematických parametrov"
-      ],
-      "tasks": [
-        "Doplniť chýbajúce technické parametre do referenčnej tabuľky",
-        "Opakovane otestovať extrakčné metódy na problematických parametroch"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+          "id": 5,
+          "title": "Týždeň 5",
+          "date": "20.3.2026",
+          "type": "offline",
+          "activities": [
+            "Aktualizované literály",
+            "Doplnene datasheety zo skupiny Zener Diode",
+            "Úprava extrakčného flowu pre OPN komponent",
+            "Porovnanie úspešnosti extrakcie pri rôznych LLM modeloch s manuálne extrahovanými JSON súbormi"
+          ],
+          "tasks": [
+            "Poslať nový zoznam rodín súčiastok",
+            "Urobiť porovnanie extrakcie s detailnou analýzou",
+            "Poslať M. Lekavému zvyšné manuálne extrahované JSON súbory na kontrolu",
+            "Pripraviť a poslať plán projektu spolu s analýzou chýb extrakcie",
+            "Aktualizovať dokumentáciu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1a6JGGPjifzL64OsvSVTpVzcKqe-WkzXO"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1LDjGlu2CgmTdiSraF_mDDBeCsk3TgBhR"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Týždeň 10",
-      "date": "20.11.2025",
-      "type": "offline",
-      "activities": [
-        "Prezentácia výsledkov extrakcie technických parametrov po doplnení referenčnej tabuľky",
-        "Diskusia o možných vylepšeniach a ďalších krokoch",
-        "Porovnanie ceny a výkonu rôznych LLM modelov",
-        "Vybratie Docling ako primárnej knižnice pre spracovanie dokumentov",
-        "Vybratie gpt5-mini ako primárneho modelu pre extrakciu technických parametrov"
-      ],
-      "tasks": [
-        "Upratať GitHub repozitár",
-        "Aktualizovať dokumentáciu projektu s novými zisteniami",
-        "Rozšíriť testovací dataset o ďalších 10 MOSFET dokumentov"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
+          "id": 6,
+          "title": "Týždeň 6",
+          "date": "27.3.2026",
+          "type": "offline",
+          "activities": [
+            "Chyby LLM extrakcie v pôvodných PDF súboroch",
+            "Zaradenie datasheetov z onsemi.com k exportovaným údajom",
+            "Tvorba .json šablón pre jednotlivé rodiny súčiastok",
+            "Porovnanie úspešnosti automatizovanej a manuálnej extrakcie"
+          ],
+          "tasks": [
+            "Overiť chyby LLM extrakcie v pôvodných PDF súboroch",
+            "Pripojiť datasheety z onsemi.com k exportovaným údajom",
+            "Vytvoriť .json šablóny pre každú rodinu súčiastok",
+            "Poslať M. Lekavému zápis z nasledujúceho stretnutia",
+            "Poslať M. Lekavému zoznam otázok k poskytnutým 129 rodinám súčiastok"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1lwrIdv3YCref8Ty9V9fg6XU7FukPMVah"
+            }
+          ]
+        },
         {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1FAWaB--XWIoDH7c3xUMpmijhAe_Z1wEi"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "title": "Týždeň 11",
-      "date": "27.11.2025",
-      "type": "offline",
-      "activities": [
-        "Prezentovanie výsledkov na viacerých MOSFET datasheetoch",
-        "Riešenie problému s Pydantic modelmi pri extrakcii údajov",
-        "Dodanie aktualizovaného zoznamu možných parametrov pre extrakciu",
-        "Diskusia o možných riešeniach a ďalších krokoch"
-      ],
-      "tasks": [
-        "Spracovať dodaný zoznam možných parametrov",
-        "Aktualizovať Pydantic modely podľa nových požiadaviek",
-        "Pracovať na dokumentácii projektu"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
-        {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1EHC9tkK-js9Hubftihtb50YrLPYCoAN4"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "title": "Týždeň 12",
-      "date": "4.12.2025",
-      "type": "offline",
-      "activities": [
-        "Prezentácia pokroku na projekte",
-        "Vyhodnotenie dodaného zoznamu parametrov a jeho implementácia do Pydantic modelov",
-        "Diskusia o pridaných ENUM typoch a ich využití pri extrakcii technických parametrov"
-      ],
-      "tasks": [
-        "Dokončiť skript pre generovanie ENUM typov",
-        "Aktualizovať dokumentáciu s novými zisteniami a postupmi"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
-        {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/1Wl_N37xK1VIm08xHzYkRnlz5_VqvtKXD"
-        }
-      ] 
-    },
-    {
-      "id": 14,
-      "title": "Týždeň 13",
-      "date": "11.12.2025",
-      "type": "online",
-      "activities": [
-        "Polročná prezentácia pokroku na projekte",
-        "Predstavenie aktuálneho stavu projektu a dosiahnutých výsledkov",
-        "Diskusia o úlohách na nasledujúce obdobie"
-      ],
-      "tasks": [
-        "Doplniť podiel práce jednotlivých členov tímu do dokumentácie",
-        "Odovzdať dokumntáciu"
-      ],
-      "participants": [
-        "Ing. Marián Lekavý, PhD.",
-        "Bc. Katarína Štofaniková",
-        "Bc. Boris Hnila",
-        "Bc. Matej Škultéty",
-        "Bc. Adam Zeman",
-        "Bc. Martin Klokočík"
-      ],
-      "documents": [
-        {
-          "title": "Zápisnica stretnutia",
-          "url": "https://docs.google.com/document/d/17edF-NEQ6y1HNSmmlY7N91I3Sm5J44_z"
+          "id": 7,
+          "title": "Týždeň 7",
+          "date": "31.3.2026",
+          "type": "online",
+          "activities": [
+            "Mapovanie datasheetov na jednotlivé súčiastky",
+            "Dohoda o náplni práce Tímového projektu 2 do konca semestra",
+            "Úprava extrakčného flowu pre OPN, literály, JSONy a markdown datasheety",
+            "Porovnanie parametrics.csv s výstupmi LLM extrakcie"
+          ],
+          "tasks": [
+            "Exportovať parametrics.csv pre každú rodinu súčiastok",
+            "Vytvoriť skript na spracovanie parametrics.csv na JSON súbory",
+            "Vytvoriť skript na spracovanie parametrics.csv na literály",
+            "Upraviť štruktúru GitHub repozitára",
+            "Preskúmať možnosti sťahovania datasheetov z onsemi.com",
+            "Vytvoriť mapovanie OPN na rodiny súčiastok",
+            "Upraviť skript na porovnanie parametrics.csv a LLM extrakčného výstupu"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1njMIaZfvr1mEq_WcVDXHT2FSKOZ3EXkT"
+            }
+          ]
         }
       ]
     }
-  ]
+  }
 }
