@@ -619,6 +619,67 @@
               "url": "https://docs.google.com/document/d/1njMIaZfvr1mEq_WcVDXHT2FSKOZ3EXkT"
             }
           ]
+        },
+        {
+          "id": 8,
+          "title": "Týždeň 8",
+          "date": "10.4.2026",
+          "type": "offline",
+          "activities": [
+            "Diskusia o mapovaní datasheetov na jednotlivé súčiastky",
+            "Dohoda o náplni práce Tímového projektu 2 do konca semestra",
+            "Úprava extrakčného flowu pre OPN, literály, JSONy a markdown datasheety",
+            "Porovnanie parametrics.csv s výstupmi LLM extrakcie"
+          ],
+          "tasks": [
+            "Aktualizovať plán semestra",
+            "Odstrániť Obsolete súčiastky z detasetu",
+            "Preskúmať možnosť využitia evaluačného agenta"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík",
+            "Ing. Marián Lekavý, PhD."
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1dW2F1cg7WGCGpljmN_adTj7Cid0k5tEg"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Týždeň 9",
+          "date": "17.4.2026",
+          "type": "online",
+          "activities": [
+            "Predstavenie evaluačného flowu",
+            "Vyhodnotenie problémov s tvorbou literálov",
+            "Predstavenie 3-stupňového extrakčného flowu"
+          ],
+          "tasks": [
+            "Otestovať flow nad redukovaným datasetom",
+            "Porovnať výsledky extrakcie s referenčnými hodnotami",
+            "Manuálne skontrolovať výstupy extrakcie"
+          ],
+          "participants": [
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík",
+            "Ing. Marián Lekavý, PhD."
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1QY4MoyHhGRHNh2AJOlT4Rub7Azr-K9s1"
+            }
+           ]
         }
       ]
     }
