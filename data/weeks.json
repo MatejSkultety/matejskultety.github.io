@@ -680,6 +680,177 @@
               "url": "https://docs.google.com/document/d/1QY4MoyHhGRHNh2AJOlT4Rub7Azr-K9s1"
             }
            ]
+        },
+        {
+          "id": 10,
+          "title": "Týždeň 10",
+          "date": "24.4.2026",
+          "type": "offline",
+          "activities": [
+            "Spustenie uceleného extrakčného flowu na vzorke 10 MOSFET súčiastok",
+            "Prepojenie parametrickej tabuľky s typmi stĺpcov",
+            "Vyhodnotenie extrahovaných dát a odstránenie nezrovnalostí v názvoch stĺpcov",
+            "Príprava mapovania a spôsobu sťahovania datasheetov z onsemi.com"
+          ],
+          "tasks": [
+            "Zjednotiť stĺpce Compliance",
+            "Opraviť enum súbory a označovanie numerických stĺpcov",
+            "Zjednotiť zápis hodnôt N/A na formát not_present",
+            "Rozšíriť AI agenta o porovnávaciu časť",
+            "Automatizovať sťahovanie PDF datasheetov",
+            "Spustiť celý flow na menšej vzorke a pripraviť demo procesu",
+            "Začať s extrakciou markdownov zo stiahnutých PDF súborov"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1yYtFmWrLT4tmC1MY7XNG_LW5Lz9n6VSZ"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Týždeň 11",
+          "date": "1.5.2026",
+          "type": "online",
+          "activities": [
+            "Príprava skriptu na extrakciu markdownov a rozdelenie rodín súčiastok medzi členov tímu",
+            "Príprava dvoch verzií skriptu na sťahovanie datasheetov",
+            "Predstavenie demo verzie extrakčného flowu vedúcemu práce",
+            "Odstránenie problému s unifikáciou jednotiek",
+            "Vyhodnotenie extrakcie na testovacej množine MOSFETov"
+          ],
+          "tasks": [
+            "Dokončiť extrakciu markdownov a pri zlyhaniach identifikovať príčinu",
+            "Spustiť extrakciu a evaluáciu na súčiastkach Zener",
+            "Pripraviť novú evaluáciu nad upravenými referenčnými MOSFETmi",
+            "Upraviť použitie literálov pre parameter Compliance",
+            "Spustiť celý extrakčný a evaluačný flow na druhej testovacej množine",
+            "Priebežne dopĺňať projektovú dokumentáciu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1jXRF7wPVgb37SzRQb6frqSXQns-1URs8"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Týždeň 12",
+          "date": "8.5.2026",
+          "type": "offline",
+          "activities": [
+            "Úprava extrakcie Compliance literálov",
+            "Príprava nových extrakčných dávok pre 10 a 100 MOSFETov a Schottky diódy",
+            "Porovnanie LLM extrakcie s referenčnými JSONmi a parametrickými tabuľkami",
+            "Pokračovanie v sťahovaní PDF datasheetov a extrakcii markdownov",
+            "Diskusia o probléme so Zener mapovaním"
+          ],
+          "tasks": [
+            "Spustiť extrakciu na druhej sade testovacích súčiastok",
+            "Analyzovať rozdiely medzi datasheetmi, referenčnými JSONmi a parametrickými tabuľkami",
+            "Doplniť chýbajúce údaje do referenčných JSONov a pripraviť ich na kontrolu",
+            "Preveriť parameter Description Type pri dávke 100 MOSFETov",
+            "Pripraviť návod na inštaláciu a návod na použitie",
+            "Vyčísliť priemernú cenu jednej extrakcie pre OPN"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1xSvLE-meAAakJlzSy7o5r7WSaAw3IvFT"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Týždeň 13",
+          "date": "15.5.2026",
+          "type": "online",
+          "activities": [
+            "Oprava chýb z predošlej extrakcie a spustenie novej extrakcie na vzorke 20 súčiastok",
+            "Vyhodnotenie úspešnosti LLM extrakcie voči parametrickým tabuľkám a referenčným JSONom",
+            "Spracovanie podkladov o vlastnom prínose členov tímu",
+            "Dohodnutie termínu nasledujúceho stretnutia"
+          ],
+          "tasks": [
+            "Poslať vedúcemu výsledky evaluácie a manuálne vyhodnotenie typov chýb",
+            "Finalizovať dokumentáciu projektu",
+            "Spustiť extrakciu na rodine MOSFETov so začiatkom na Silicon Carbide",
+            "Pripraviť návod na spustenie projektu a sprístupniť Git repozitár vedúcemu",
+            "Doplniť do dokumentácie podiel práce jednotlivých členov tímu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1dXxG1EJhpY-wVBK7YHFEIc8R7r0nU8e9"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Týždeň 14 (skúškové)",
+          "date": "22.5.2026",
+          "type": "online",
+          "activities": [
+            "Sprístupnenie GitHub repozitára vedúcemu práce",
+            "Príprava návodu na inštaláciu a spustenie extrakcie",
+            "Spustenie extrakcie pre 2000 MOSFET súčiastok",
+            "Spracovanie výsledkov evaluácie testovacej sady",
+            "Kontrola a pripomienkovanie finálnej dokumentácie"
+          ],
+          "tasks": [
+            "Pridať do projektu MIT licenciu",
+            "Interpretovať výsledky LLM extrakcie pre 2000 MOSFETov a doplniť ich do dokumentácie",
+            "Doplniť do dokumentácie odkaz na webovú stránku tímového projektu",
+            "Zapísať do dokumentácie podiel vlastnej práce členov tímu"
+          ],
+          "participants": [
+            "Ing. Marián Lekavý, PhD.",
+            "Bc. Katarína Štofaniková",
+            "Bc. Boris Hnila",
+            "Bc. Matej Škultéty",
+            "Bc. Adam Zeman",
+            "Bc. Martin Klokočík"
+          ],
+          "documents": [
+            {
+              "title": "Zápisnica stretnutia",
+              "url": "https://docs.google.com/document/d/1i8DT1MKzKqW2TNGeDmIHCqdmp39XCX8b"
+            }
+          ]
         }
       ]
     }
